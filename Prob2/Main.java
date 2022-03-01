@@ -7,10 +7,10 @@ public class Main {
 
     public static void main(String[] args){
         //creating object of professor and secretary
-        DeptEmployee pro1 = new Professor("Renuka",120000, LocalDate.now(),6);
-        DeptEmployee pro2 =  new Professor("Muhyedin",99000,LocalDate.now(),1);
-        DeptEmployee pro3 =   new Professor("Mohamed",89000,LocalDate.now(),0);
-        DeptEmployee sec1 = new Secretary("Nancy",59000,LocalDate.now(),6);
+        DeptEmployee pro1 = new Professor("Renuka",120000, LocalDate.of(2002,7,12),6);
+        DeptEmployee pro2 =  new Professor("Muhyedin",99000,LocalDate.of(2011,9,11),1);
+        DeptEmployee pro3 =   new Professor("Mohamed",89000,LocalDate.of(2020,1,1),0);
+        DeptEmployee sec1 = new Secretary("Nancy",59000,LocalDate.of(2018,9,15),6);
         DeptEmployee sec2 = new Secretary("Angela",62000,LocalDate.of(2015,03,26),8);
        //declaring array of DepEmployee
         DeptEmployee[] department = {pro1,pro2,pro3,sec1,sec2};
@@ -32,5 +32,8 @@ public class Main {
             System.out.println("You wish not see and Goodbye for now.");
         }
 
+        for(int j = 0; j < department.length; j++){
+            System.out.println(department[j].getName() + " got hired: "+  department[j].getHireDate());
+        }
     }
 }

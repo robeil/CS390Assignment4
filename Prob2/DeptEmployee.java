@@ -12,7 +12,7 @@ public class DeptEmployee {
     public DeptEmployee(String name, double salary,LocalDate hireDate){
         this.name = name;
         this.salary = salary;
-        this.hireDate = LocalDate.now();
+        this.hireDate = hireDate;
     }
 
     public String getName() {

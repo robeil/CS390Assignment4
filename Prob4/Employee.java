@@ -41,9 +41,7 @@ abstract public class Employee {
 
     @Override
     public String toString() {
-        return "Employee: " +
-                "firstName: '" + firstName + '\'' +
-                ", lastName: '" + lastName + '\'' +
-                ", socSecurityNumber: '" + socSecurityNumber + '\'';
+        String details = "Employee firstName: '" + firstName + ", lastName: '" + lastName + ", socSecurityNumber: '" + socSecurityNumber;
+        return details;
     }
 }

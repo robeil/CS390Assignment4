@@ -26,20 +26,6 @@ public class Computer {
     }
 
     @Override
-    public String toString() {
-        return "Computer: " +
-                "manufacturer: '" + manufacturer + '\'' +
-                ", processor: '" + processor + '\'' +
-                ", ramSize: " + ramSize +
-                ", processorSpeed: " + processorSpeed;
-    }
-
-    @Override
-    public int hashCode() {
-        return this.manufacturer.hashCode();   //fixme ????????????????????????????????
-    }
-
-    @Override
     public boolean equals(Object obj) {
 
         if(obj == null) return false;
@@ -47,5 +33,11 @@ public class Computer {
         Computer c = (Computer) obj;
 
         return this.manufacturer.equals(c.manufacturer);
+    }
+
+    @Override
+    public String toString() {
+        String details = "Computer manufacturer: '" + manufacturer + ", processor: '" + processor + ", ramSize: " + ramSize + ", processorSpeed: " + processorSpeed;
+        return details;
     }
 }

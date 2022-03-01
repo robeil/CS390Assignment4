@@ -10,12 +10,12 @@ public class Main {
         Computer[] computers = {c1,c2};
         System.out.println(c1.equals(c2));
 
-        System.out.println("Computer 1 : "+ c1.hashCode());
-        System.out.println("Computer 2 : "+ c2.hashCode());
+        ;
 
         //printing all the info about the computers
         for(Computer c: computers){
             System.out.println(c.toString());
+            System.out.println("Hashcode of this is: "+ c.hashCode());
         }
     }
 }

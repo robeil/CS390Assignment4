@@ -34,9 +34,7 @@ public class CommissionEmployee extends Employee{
 
     @Override
     public String toString() {
-        return "CommissionEmployee: " +
-                "grossSales: " + grossSales +
-                ", commissionRate: " + commissionRate +
-                '%';
+        String details = "CommissionEmployee: " + "grossSales: " + grossSales + ", commissionRate: " + commissionRate + '%';
+        return details;
     }
 }
