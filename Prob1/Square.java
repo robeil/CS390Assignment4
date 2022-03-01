@@ -1,4 +1,4 @@
-package CS390Assignment4;
+package CS390Assignment4.Prob1;
 
 public class Square extends Rectangle {
 

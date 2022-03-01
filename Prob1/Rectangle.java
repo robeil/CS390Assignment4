@@ -1,4 +1,4 @@
-package CS390Assignment4;
+package CS390Assignment4.Prob1;
 
 public class Rectangle extends Shape {
     //instance fields declared as default
