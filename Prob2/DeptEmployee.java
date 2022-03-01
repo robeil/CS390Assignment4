@@ -25,6 +25,7 @@ public class DeptEmployee {
 
     public LocalDate getHireDate() {
         return hireDate;
+        //(Date) hireDate.clone()
     }
 
     public void setHireDate(LocalDate hireDate) {
