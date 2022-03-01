@@ -34,8 +34,7 @@ public class HourlyEmployee extends Employee{
 
     @Override
     public String toString() {
-        return "HourlyEmployee: " +
-                "wage: " + wage +
-                ", hours: " + hours;
+        String details = "HourlyEmployee: " + "wage: " + wage + ", hours: " + hours;
+        return details;
     }
 }

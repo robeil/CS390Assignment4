@@ -24,7 +24,7 @@ public class BasePlusCommissionEmployee extends CommissionEmployee {
 
     @Override
     public String toString() {
-        return "BasePlusCommissionEmployee: " +
-                "baseSalary: " + baseSalary;
+        String details = "BasePlusCommissionEmployee: " + "baseSalary: " + baseSalary;
+        return details;
     }
 }

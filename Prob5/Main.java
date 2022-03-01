@@ -10,8 +10,6 @@ public class Main {
         Computer[] computers = {c1,c2};
         System.out.println(c1.equals(c2));
 
-        ;
-
         //printing all the info about the computers
         for(Computer c: computers){
             System.out.println(c.toString());

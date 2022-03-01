@@ -32,7 +32,12 @@ public class Computer {
         if(!(obj instanceof Computer)) return false;
         Computer c = (Computer) obj;
 
-        return this.manufacturer.equals(c.manufacturer);
+        return (
+                this.manufacturer.equals(c.manufacturer)
+                        && this.processor.equals(c.processor)
+                        && (this.processorSpeed == c.processorSpeed)
+                        && (this.ramSize == c.ramSize)
+        );
     }
 
     @Override
