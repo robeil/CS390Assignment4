@@ -3,9 +3,14 @@ package CS390Assignment4.Prob1;
 public class Main {
 
     public static void printTotal(Shape[] shapes){
+        double totalArea = 0.0;
+        double totalPerimeter= 0.0;
         for(Shape s : shapes){
             System.out.println(s.toString());
+            totalArea += s.calculateArea();
+          totalPerimeter += s.calculatePerimeter();
         }
+        System.out.println("Total area " + totalArea +"\nTotal Perimeter "+ totalPerimeter);
     }
     public static void main(String[] args){
         //creating array of shape

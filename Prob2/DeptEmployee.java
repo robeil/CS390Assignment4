@@ -2,7 +2,7 @@ package CS390Assignment4.Prob2;
 
 import java.time.LocalDate;
 
-public class DeptEmployee {
+public class DeptEmployee implements Cloneable{
     //instance field
     private String name;
     private double salary;
@@ -24,8 +24,8 @@ public class DeptEmployee {
     }
 
     public LocalDate getHireDate() {
-        return hireDate;
-        //(Date) hireDate.clone()
+       // return hireDate;
+       return hireDate;
     }
 
     public void setHireDate(LocalDate hireDate) {

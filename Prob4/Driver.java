@@ -3,6 +3,7 @@ package CS390Assignment4.Prob4;
 public class Driver {
 
     public static void main(String[] args) {
+
         //creating objects for each class
         Employee ce = new CommissionEmployee("Rob","Kidane","123-456-9658",365,0.3);
         Employee he = new HourlyEmployee("Kudus","Tekle","362-658-8521",15,8);
@@ -15,8 +16,12 @@ public class Driver {
         //adding all the salaries in the sum variable
         double sum = 0.0;
         for(int i = 0; i < employees.length; i++){
+            //System.out.println(employees[i].toString());
             sum += employees[i].getPayment();
+            System.out.println(employees[i].toString());
         }
+
+        System.out.println();
         //printing the sum of the salaries
         System.out.println("Total Salaries : "+ sum);
 

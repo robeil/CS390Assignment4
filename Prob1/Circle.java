@@ -9,11 +9,13 @@ public class Circle extends Shape {
         this.radius = radius;
     }
     //calculate area
-    public double calculateArea(double radius){
+    @Override
+    public double calculateArea(){
         return Math.PI * radius * radius;
     }
     //calculate perimeter
-    public double calculatePerimeter(double radius){
+    @Override
+    public double calculatePerimeter(){
         return 2 * Math.PI * radius;
     }
 

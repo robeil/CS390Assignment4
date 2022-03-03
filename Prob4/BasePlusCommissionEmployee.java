@@ -22,9 +22,5 @@ public class BasePlusCommissionEmployee extends CommissionEmployee {
         return baseSalary + (getGrossSales() * getCommissionRate());
     }
 
-    @Override
-    public String toString() {
-        String details = "BasePlusCommissionEmployee: " + "baseSalary: " + baseSalary;
-        return details;
-    }
+
 }

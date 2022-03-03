@@ -22,9 +22,5 @@ public class SalariedEmployee extends Employee {
         return this.weeklySalary;
     }
 
-    @Override
-    public String toString() {
-        String details = "SalariedEmployee: " + "weeklySalary: " + weeklySalary;
-        return details;
-    }
+
 }
